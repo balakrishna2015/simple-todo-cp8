@@ -1,0 +1,42 @@
+###
+GET http://localhost:3000/todos/
+
+###
+GET http://localhost:3000/todos/2
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+    "id": 9,
+    "todo": "LEARN PYTHON",
+    "priority": "MEDIUM",
+    "status": "DONE"
+}
+
+###
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+   "status":"TO DO" 
+}
+###
+PUT http://localhost:3000/todos/2/
+Content-Type: application/json
+
+{
+   "priority":"HIGH" 
+}
+###
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+   "todo":"Some task" 
+}
+###
+DELETE http://localhost:3000/todos/4
+
+//2, "Learn Node JS", "HIGH", "IN PROGRESS"
+
